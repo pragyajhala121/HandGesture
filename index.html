@@ -1,0 +1,78 @@
+ 
+<html>
+    <head>
+      <title>HAND GESTURE</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+  
+    <body>
+    <div class="container">
+    
+      <center>
+        <h3 class="btn btn-primary heading" style="background-color: hotpink;">GESTURE WEB APP
+          <br>
+        <span>&#128077;</span>
+        <span>&#9996;</span>
+        <span>&#128076;</span>
+        <span>&#129304;</span>
+        <span>&#128080;</span>
+        <span>&#128400;</span>
+      </h3>
+        <br><br>
+  
+        <p style="font-size: 22px;">Take a selfie of the Gesture to know about this meaning 
+          <h5>On the follwing gestures the model is trained</h5>
+            <br>
+          <b >&#128077;|</b>
+          
+          <b>&#128076;|</b>
+         
+          <b>&#9996;|</b>
+          
+          <b>&#129304;|</b>
+          
+        </p>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <label>Webcam view-</label>
+          <div id="camera">
+            
+          </div>
+          <br><br>
+          <button onclick="snapshot();" class="btn btn-warning">Capture Image</button>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <label>Prediction 1 - </label>
+          <p class="emotion_name" id="result_emotion_name"></p>
+          <p class="emoji" id="update_emoji"></p>
+          
+          <label>Prediction 2 - </label>
+          <p class="emotion_name" id="result_emotion_name2"></p>
+          <p class="emoji" id="update_emoji2"></p>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Snapshot - </label>
+          <div id="result">
+            
+          </div>
+          <br><br>
+           <button onclick="check();" class="btn btn-danger ">Predict Gesture</button>
+        </div>
+  
+      </center>
+  
+    </div>
+  
+  <script src="main.js"></script>
+  
+    </body>
+  </html>
+  
+   
